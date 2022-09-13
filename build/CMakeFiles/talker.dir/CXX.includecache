@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jbarmagen/Dev/yarp/talker/talker.cpp
+yarp/os/LogComponent.h
+-
+yarp/os/LogStream.h
+-
+yarp/os/Network.h
+-
+yarp/os/Node.h
+-
+yarp/os/Publisher.h
+-
+yarp/os/Time.h
+-
+yarp/rosmsg/Yarpinfo.h
+-
+

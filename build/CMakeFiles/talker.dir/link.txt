@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/talker.dir/talker.cpp.o  -o talker  -Wl,-rpath,/usr/local/lib /usr/local/lib/libYARP_init.so.3.7.2 /usr/local/lib/libYARP_os.so.3.7.2 
