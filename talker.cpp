@@ -7,7 +7,7 @@
  
 //#include <yarp/rosmsg/std_msgs/String.h>
 #include <yarp/rosmsg/Yarpinfo.h>
-#include <yarp/rosmsg/output.h>
+#include <yarp/rosmsg/Vjxoutput.h>
 #include <vector>
  
 using yarp::os::Network;
@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
     Node node("/yarp/talker");
  
     /* subscribe to topic chatter */
-    yarp::os::Publisher<yarp::rosmsg::output> publisher;
+    yarp::os::Publisher<yarp::rosmsg::Vjxoutput> publisher;
     if (!publisher.topic("output2ros")) {
         yCError(TALKER) << "Failed to create publisher to yarpinfo";
         return -1;
@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
  
     while (true) {
         /* prepare some data */
-        yarp::rosmsg::output ros_output;
+        yarp::rosmsg::Vjxoutput ros_output;
         vector<double> sklt_out, vel_out;
         for (int j = 0; j < 13; j++)
         {

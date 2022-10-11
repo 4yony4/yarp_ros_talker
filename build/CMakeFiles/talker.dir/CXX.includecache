@@ -21,4 +21,8 @@ yarp/os/Time.h
 -
 yarp/rosmsg/Yarpinfo.h
 -
+yarp/rosmsg/Vjxoutput.h
+-
+vector
+-
 
